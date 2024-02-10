@@ -21,7 +21,7 @@ internal object NotificationsHelper {
         // create the notification channel
         val channel = NotificationChannel(
             NOTIFICATION_CHANNEL_ID,
-            context.getString(R.string.notification_channel_general_name),
+            context.getString(R.string.foreground_service_sample_notification_channel_general_name),
             NotificationManager.IMPORTANCE_DEFAULT
         )
         notificationManager.createNotificationChannel(channel)
@@ -29,8 +29,8 @@ internal object NotificationsHelper {
 
     fun buildNotification(context: Context): Notification {
         return NotificationCompat.Builder(context, NOTIFICATION_CHANNEL_ID)
-            .setContentTitle(context.getString(R.string.foreground_service_notification_title))
-            .setContentText(context.getString(R.string.foreground_service_notification_description))
+            .setContentTitle(context.getString(R.string.foreground_service_sample_notification_title))
+            .setContentText(context.getString(R.string.foreground_service_sample_notification_description))
             .setSmallIcon(R.drawable.ic_launcher_foreground)
             .setForegroundServiceBehavior(NotificationCompat.FOREGROUND_SERVICE_IMMEDIATE)
             .setContentIntent(Intent(context, MainActivity::class.java).let { notificationIntent ->
