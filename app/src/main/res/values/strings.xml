@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Foreground Service 14 Sample</string>
+    <string name="notification_channel_general_name">General notification</string>
+    <string name="foreground_service_notification_title">Foreground Service</string>
+    <string name="foreground_service_notification_description">Sample app is running in the background.</string>
+
+    <string name="foreground_service_sample_description">This sample app demonstrates how to use the foreground service on Android 14.\n\nIt will start a foreground service to fetch last known location and to observe any updates to the location.\n\nIt also shows how to bind to a service to update UI.</string>
+
+    <string name="foreground_service_sample_status_title">Foreground service status:</string>
+    <string name="foreground_service_sample_status_running">RUNNING</string>
+    <string name="foreground_service_sample_status_not_running">NOT RUNNING</string>
+    <string name="foreground_service_sample_button_start">Start foreground service</string>
+    <string name="foreground_service_sample_button_stop">Stop foreground service</string>
+
+    <string name="foreground_service_sample_last_location_title">Last location: </string>
+    <string name="foreground_service_sample_last_location_fetching">Fetching...</string>
+</resources>
